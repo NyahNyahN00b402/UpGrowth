@@ -117,7 +117,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="5fk-au-Ikf" kind="show" id="8Pb-h3-Cv8"/>
+                                    <segue destination="5fk-au-Ikf" kind="presentation" modalPresentationStyle="fullScreen" id="8Pb-h3-Cv8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -178,7 +178,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="5fk-au-Ikf" kind="show" id="pcB-jC-cps"/>
+                                    <segue destination="5fk-au-Ikf" kind="presentation" modalPresentationStyle="fullScreen" id="pcB-jC-cps"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -215,22 +215,22 @@
                         <barButtonItem title="Home" image="home128px" width="42" style="plain" id="1Av-vi-ml9"/>
                         <barButtonItem title="Calendar" image="calendar128px" width="42" style="plain" id="2tq-n4-A1M">
                             <connections>
-                                <segue destination="Nxr-SO-IAt" kind="show" id="giS-Uv-Vj2"/>
+                                <segue destination="Nxr-SO-IAt" kind="presentation" modalPresentationStyle="fullScreen" id="giS-Uv-Vj2"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="New Post" image="add256px" width="42" style="plain" id="mnn-ao-gXQ">
                             <connections>
-                                <segue destination="pu1-MP-z5E" kind="show" id="nXW-Vy-T7A"/>
+                                <segue destination="pu1-MP-z5E" kind="presentation" modalPresentationStyle="fullScreen" id="nXW-Vy-T7A"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Goals" image="goal128px" style="plain" id="R00-Ye-hPA">
                             <connections>
-                                <segue destination="74P-Oc-wbK" kind="show" id="40W-ef-KhF"/>
+                                <segue destination="74P-Oc-wbK" kind="presentation" modalPresentationStyle="fullScreen" id="40W-ef-KhF"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Announcements" image="bell128px" width="42" style="plain" id="eh6-0v-Ke7">
                             <connections>
-                                <segue destination="CF1-C9-wB7" kind="show" id="muI-Ho-TAt"/>
+                                <segue destination="CF1-C9-wB7" kind="presentation" modalPresentationStyle="fullScreen" id="muI-Ho-TAt"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -265,23 +265,23 @@
                         <barButtonItem width="152" style="plain" systemItem="fixedSpace" id="7ZP-dn-vz2"/>
                         <barButtonItem title="Home" image="home128px" width="42" style="plain" id="5FF-OE-MTT">
                             <connections>
-                                <segue destination="5fk-au-Ikf" kind="show" id="Wjw-Kf-Upe"/>
+                                <segue destination="5fk-au-Ikf" kind="presentation" modalPresentationStyle="fullScreen" id="Wjw-Kf-Upe"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Calendar" image="calendar128px" width="42" style="plain" id="ZUh-ur-kGP"/>
                         <barButtonItem title="New Post" image="add256px" width="42" style="plain" id="RnB-JH-TWp">
                             <connections>
-                                <segue destination="pu1-MP-z5E" kind="show" id="VMk-ML-cVE"/>
+                                <segue destination="pu1-MP-z5E" kind="presentation" modalPresentationStyle="fullScreen" id="VMk-ML-cVE"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Goals" image="goal128px" style="plain" id="5F7-9m-aas">
                             <connections>
-                                <segue destination="74P-Oc-wbK" kind="show" id="fd5-Up-Uyz"/>
+                                <segue destination="74P-Oc-wbK" kind="presentation" modalPresentationStyle="fullScreen" id="fd5-Up-Uyz"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Announcements" image="bell128px" width="42" style="plain" id="6px-Pc-Dzr">
                             <connections>
-                                <segue destination="CF1-C9-wB7" kind="show" id="tTF-vU-Ik3"/>
+                                <segue destination="CF1-C9-wB7" kind="presentation" modalPresentationStyle="fullScreen" id="tTF-vU-Ik3"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -316,23 +316,23 @@
                         <barButtonItem width="152" style="plain" systemItem="fixedSpace" id="4rm-5A-vlq"/>
                         <barButtonItem title="Home" image="home128px" width="42" style="plain" id="04M-Bo-gJ0">
                             <connections>
-                                <segue destination="5fk-au-Ikf" kind="show" id="8Cr-BF-6d8"/>
+                                <segue destination="5fk-au-Ikf" kind="presentation" modalPresentationStyle="fullScreen" id="8Cr-BF-6d8"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Calendar" image="calendar128px" width="42" style="plain" id="r4R-cj-sBd">
                             <connections>
-                                <segue destination="Nxr-SO-IAt" kind="show" id="cxl-Qy-XJ5"/>
+                                <segue destination="Nxr-SO-IAt" kind="presentation" modalPresentationStyle="fullScreen" id="cxl-Qy-XJ5"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="New Post" image="add256px" width="42" style="plain" id="Z3D-eQ-WyV"/>
                         <barButtonItem title="Goals" image="goal128px" style="plain" id="shp-JN-zTa">
                             <connections>
-                                <segue destination="74P-Oc-wbK" kind="show" id="rAr-Rj-yrm"/>
+                                <segue destination="74P-Oc-wbK" kind="presentation" modalPresentationStyle="fullScreen" id="rAr-Rj-yrm"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Announcements" image="bell128px" width="42" style="plain" id="N2q-Uf-qXP">
                             <connections>
-                                <segue destination="CF1-C9-wB7" kind="show" id="xx7-mB-1Gh"/>
+                                <segue destination="CF1-C9-wB7" kind="presentation" modalPresentationStyle="fullScreen" id="xx7-mB-1Gh"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -367,23 +367,23 @@
                         <barButtonItem width="152" style="plain" systemItem="fixedSpace" id="CZY-2D-5ux"/>
                         <barButtonItem title="Home" image="home128px" width="42" style="plain" id="Vx4-lu-RVN">
                             <connections>
-                                <segue destination="5fk-au-Ikf" kind="show" id="IWf-If-V7W"/>
+                                <segue destination="5fk-au-Ikf" kind="presentation" modalPresentationStyle="fullScreen" id="IWf-If-V7W"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Calendar" image="calendar128px" width="42" style="plain" id="u4W-fO-zrU">
                             <connections>
-                                <segue destination="Nxr-SO-IAt" kind="show" id="S1Z-SD-20w"/>
+                                <segue destination="Nxr-SO-IAt" kind="presentation" modalPresentationStyle="fullScreen" id="S1Z-SD-20w"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="New Post" image="add256px" width="42" style="plain" id="czZ-qf-Z8L">
                             <connections>
-                                <segue destination="pu1-MP-z5E" kind="show" id="nrI-yW-jdH"/>
+                                <segue destination="pu1-MP-z5E" kind="presentation" modalPresentationStyle="fullScreen" id="nrI-yW-jdH"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Goals" image="goal128px" style="plain" id="mUa-ac-I0I"/>
                         <barButtonItem title="Announcements" image="bell128px" width="42" style="plain" id="g11-FD-U7c">
                             <connections>
-                                <segue destination="CF1-C9-wB7" kind="show" id="I3L-Pe-xjZ"/>
+                                <segue destination="CF1-C9-wB7" kind="presentation" modalPresentationStyle="fullScreen" id="I3L-Pe-xjZ"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -418,22 +418,22 @@
                         <barButtonItem width="152" style="plain" systemItem="fixedSpace" id="VzD-4X-aw2"/>
                         <barButtonItem title="Home" image="home128px" width="42" style="plain" id="Ld4-b1-BeD">
                             <connections>
-                                <segue destination="5fk-au-Ikf" kind="show" id="5go-fT-yNF"/>
+                                <segue destination="5fk-au-Ikf" kind="presentation" modalPresentationStyle="fullScreen" id="5go-fT-yNF"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Calendar" image="calendar128px" width="42" style="plain" id="d6C-oP-C4s">
                             <connections>
-                                <segue destination="Nxr-SO-IAt" kind="show" id="lgz-Td-vss"/>
+                                <segue destination="Nxr-SO-IAt" kind="presentation" modalPresentationStyle="fullScreen" id="lgz-Td-vss"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="New Post" image="add256px" width="42" style="plain" id="9Eb-9A-G31">
                             <connections>
-                                <segue destination="pu1-MP-z5E" kind="show" id="eIC-SF-iin"/>
+                                <segue destination="pu1-MP-z5E" kind="presentation" modalPresentationStyle="fullScreen" id="eIC-SF-iin"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Goals" image="goal128px" style="plain" id="NOz-ov-l4m">
                             <connections>
-                                <segue destination="74P-Oc-wbK" kind="show" id="IJe-Zl-AQX"/>
+                                <segue destination="74P-Oc-wbK" kind="presentation" modalPresentationStyle="fullScreen" id="IJe-Zl-AQX"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Announcements" image="bell128px" width="42" style="plain" id="RSj-2p-LUa"/>
