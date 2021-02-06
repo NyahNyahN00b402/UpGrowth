@@ -8,19 +8,19 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--StartVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UpGrowth" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="StartVC" id="BYZ-38-t0r" customClass="ViewController" customModule="UpGrowth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="UpGrowth Icon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="Rwr-eb-QzS">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="UpGrowth Icon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="Rwr-eb-QzS">
                                 <rect key="frame" x="0.0" y="114" width="414" height="469"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="mW1-KF-KqG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="mW1-KF-KqG">
                                 <rect key="frame" x="75" y="716" width="264" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="square.fill" catalog="system">
@@ -37,7 +37,7 @@
                                     <segue destination="taD-Fd-QxA" kind="show" id="Ipr-Z6-7lL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="hJa-G5-djM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="hJa-G5-djM">
                                 <rect key="frame" x="75" y="628" width="264" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="square.fill" catalog="system">
@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="71.651785714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--SignInVC-->
         <scene sceneID="tdA-de-i2K">
             <objects>
-                <viewController id="kPF-cI-WOn" sceneMemberID="viewController">
+                <viewController title="SignInVC" id="kPF-cI-WOn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ooL-eG-cEh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,10 +130,10 @@
             </objects>
             <point key="canvasLocation" x="829" y="72"/>
         </scene>
-        <!--View Controller-->
+        <!--SignUpVC-->
         <scene sceneID="APE-PM-x9s">
             <objects>
-                <viewController id="taD-Fd-QxA" sceneMemberID="viewController">
+                <viewController title="SignUpVC" id="taD-Fd-QxA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dXn-9u-JNR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,16 +191,49 @@
             </objects>
             <point key="canvasLocation" x="138" y="725"/>
         </scene>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="Oz8-Ud-hbz">
             <objects>
-                <viewController id="5fk-au-Ikf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fWq-a2-CeP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                <viewController title="HomeVC" id="5fk-au-Ikf" sceneMemberID="viewController">
+                    <view key="view" tag="4" contentMode="scaleToFill" id="fWq-a2-CeP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDK-PP-Fh8">
+                                <rect key="frame" x="118" y="319" width="179" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="63"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="y9s-mT-Zc2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem width="152" style="plain" systemItem="fixedSpace" id="miS-hv-gV0"/>
+                        <barButtonItem title="Home" image="home128px" width="42" style="plain" id="1Av-vi-ml9"/>
+                        <barButtonItem title="Calendar" image="calendar128px" width="42" style="plain" id="2tq-n4-A1M">
+                            <connections>
+                                <segue destination="Nxr-SO-IAt" kind="show" id="giS-Uv-Vj2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="New Post" image="add256px" width="42" style="plain" id="mnn-ao-gXQ">
+                            <connections>
+                                <segue destination="pu1-MP-z5E" kind="show" id="nXW-Vy-T7A"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Goals" image="goal128px" style="plain" id="R00-Ye-hPA">
+                            <connections>
+                                <segue destination="74P-Oc-wbK" kind="show" id="40W-ef-KhF"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Announcements" image="bell128px" width="42" style="plain" id="eh6-0v-Ke7">
+                            <connections>
+                                <segue destination="CF1-C9-wB7" kind="show" id="muI-Ho-TAt"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="FaK-ij-8Cx"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -209,13 +242,226 @@
             </objects>
             <point key="canvasLocation" x="828.98550724637687" y="724.55357142857144"/>
         </scene>
+        <!--CalendarVC-->
+        <scene sceneID="TL1-YQ-DXc">
+            <objects>
+                <viewController title="CalendarVC" id="Nxr-SO-IAt" sceneMemberID="viewController">
+                    <view key="view" tag="4" contentMode="scaleToFill" id="FXo-2s-ois">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CALENDAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuK-wL-zu7">
+                                <rect key="frame" x="49" y="265" width="317" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="63"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fkv-wG-mwQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem width="152" style="plain" systemItem="fixedSpace" id="7ZP-dn-vz2"/>
+                        <barButtonItem title="Home" image="home128px" width="42" style="plain" id="5FF-OE-MTT">
+                            <connections>
+                                <segue destination="5fk-au-Ikf" kind="show" id="Wjw-Kf-Upe"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Calendar" image="calendar128px" width="42" style="plain" id="ZUh-ur-kGP"/>
+                        <barButtonItem title="New Post" image="add256px" width="42" style="plain" id="RnB-JH-TWp">
+                            <connections>
+                                <segue destination="pu1-MP-z5E" kind="show" id="VMk-ML-cVE"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Goals" image="goal128px" style="plain" id="5F7-9m-aas">
+                            <connections>
+                                <segue destination="74P-Oc-wbK" kind="show" id="fd5-Up-Uyz"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Announcements" image="bell128px" width="42" style="plain" id="6px-Pc-Dzr">
+                            <connections>
+                                <segue destination="CF1-C9-wB7" kind="show" id="tTF-vU-Ik3"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="n6q-dL-37g"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0WD-cn-3th" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1485.5072463768117" y="416.51785714285711"/>
+        </scene>
+        <!--AddPostVC-->
+        <scene sceneID="WxI-6x-v6e">
+            <objects>
+                <viewController title="AddPostVC" id="pu1-MP-z5E" sceneMemberID="viewController">
+                    <view key="view" tag="4" contentMode="scaleToFill" id="BOc-4l-jg7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ADD POST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbG-5b-fRf">
+                                <rect key="frame" x="70" y="308" width="296" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="63"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="abo-yg-FDd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem width="152" style="plain" systemItem="fixedSpace" id="4rm-5A-vlq"/>
+                        <barButtonItem title="Home" image="home128px" width="42" style="plain" id="04M-Bo-gJ0">
+                            <connections>
+                                <segue destination="5fk-au-Ikf" kind="show" id="8Cr-BF-6d8"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Calendar" image="calendar128px" width="42" style="plain" id="r4R-cj-sBd">
+                            <connections>
+                                <segue destination="Nxr-SO-IAt" kind="show" id="cxl-Qy-XJ5"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="New Post" image="add256px" width="42" style="plain" id="Z3D-eQ-WyV"/>
+                        <barButtonItem title="Goals" image="goal128px" style="plain" id="shp-JN-zTa">
+                            <connections>
+                                <segue destination="74P-Oc-wbK" kind="show" id="rAr-Rj-yrm"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Announcements" image="bell128px" width="42" style="plain" id="N2q-Uf-qXP">
+                            <connections>
+                                <segue destination="CF1-C9-wB7" kind="show" id="xx7-mB-1Gh"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="hwn-Dk-IDV"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fd8-vF-xH1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2119" y="540"/>
+        </scene>
+        <!--GoalsVC-->
+        <scene sceneID="96d-9R-2n0">
+            <objects>
+                <viewController title="GoalsVC" id="74P-Oc-wbK" sceneMemberID="viewController">
+                    <view key="view" tag="4" contentMode="scaleToFill" id="cXh-Ky-5G8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GOALS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpY-Pn-tix">
+                                <rect key="frame" x="107" y="345" width="201" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="63"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qMQ-iO-Wj5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem width="152" style="plain" systemItem="fixedSpace" id="CZY-2D-5ux"/>
+                        <barButtonItem title="Home" image="home128px" width="42" style="plain" id="Vx4-lu-RVN">
+                            <connections>
+                                <segue destination="5fk-au-Ikf" kind="show" id="IWf-If-V7W"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Calendar" image="calendar128px" width="42" style="plain" id="u4W-fO-zrU">
+                            <connections>
+                                <segue destination="Nxr-SO-IAt" kind="show" id="S1Z-SD-20w"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="New Post" image="add256px" width="42" style="plain" id="czZ-qf-Z8L">
+                            <connections>
+                                <segue destination="pu1-MP-z5E" kind="show" id="nrI-yW-jdH"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Goals" image="goal128px" style="plain" id="mUa-ac-I0I"/>
+                        <barButtonItem title="Announcements" image="bell128px" width="42" style="plain" id="g11-FD-U7c">
+                            <connections>
+                                <segue destination="CF1-C9-wB7" kind="show" id="I3L-Pe-xjZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="sVj-yl-Djr"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jeV-05-VL9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2757" y="635"/>
+        </scene>
+        <!--NotificationVC-->
+        <scene sceneID="H9U-6z-RnX">
+            <objects>
+                <viewController title="NotificationVC" id="CF1-C9-wB7" sceneMemberID="viewController">
+                    <view key="view" tag="4" contentMode="scaleToFill" id="A1v-UW-gMH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ANNOUNCEMENTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAY-dd-ZLS">
+                                <rect key="frame" x="55" y="347" width="315" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="63"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G8l-f2-OJK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem width="152" style="plain" systemItem="fixedSpace" id="VzD-4X-aw2"/>
+                        <barButtonItem title="Home" image="home128px" width="42" style="plain" id="Ld4-b1-BeD">
+                            <connections>
+                                <segue destination="5fk-au-Ikf" kind="show" id="5go-fT-yNF"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Calendar" image="calendar128px" width="42" style="plain" id="d6C-oP-C4s">
+                            <connections>
+                                <segue destination="Nxr-SO-IAt" kind="show" id="lgz-Td-vss"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="New Post" image="add256px" width="42" style="plain" id="9Eb-9A-G31">
+                            <connections>
+                                <segue destination="pu1-MP-z5E" kind="show" id="eIC-SF-iin"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Goals" image="goal128px" style="plain" id="NOz-ov-l4m">
+                            <connections>
+                                <segue destination="74P-Oc-wbK" kind="show" id="IJe-Zl-AQX"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Announcements" image="bell128px" width="42" style="plain" id="RSj-2p-LUa"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="ZrX-yM-Zdd"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4qs-EB-R8V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3418.840579710145" y="724.55357142857144"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="8Pb-h3-Cv8"/>
+        <segue reference="I3L-Pe-xjZ"/>
+        <segue reference="IJe-Zl-AQX"/>
+        <segue reference="eIC-SF-iin"/>
+        <segue reference="lgz-Td-vss"/>
+        <segue reference="5go-fT-yNF"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="UpGrowth Icon" width="500" height="500"/>
         <image name="UpGrowth Label" width="500" height="500"/>
+        <image name="add256px" width="256" height="256"/>
+        <image name="bell128px" width="128" height="128"/>
+        <image name="calendar128px" width="128" height="128"/>
+        <image name="goal128px" width="128" height="128"/>
+        <image name="home128px" width="128" height="128"/>
         <image name="square.fill" catalog="system" width="128" height="114"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
