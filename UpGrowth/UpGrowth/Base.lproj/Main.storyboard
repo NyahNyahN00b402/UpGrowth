@@ -255,6 +255,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CALENDAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuK-wL-zu7">
+                                <rect key="frame" x="48.5" y="84" width="317" height="75.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="63"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pAL-9A-7Qb">
+                                <rect key="frame" x="0.0" y="168" width="414" height="645"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohh-Da-jAa">
                                 <rect key="frame" x="0.0" y="813" width="414" height="44"/>
                                 <items>
@@ -281,29 +291,19 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pAL-9A-7Qb">
-                                <rect key="frame" x="0.0" y="168" width="414" height="674"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CALENDAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuK-wL-zu7">
-                                <rect key="frame" x="49" y="84" width="317" height="75.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="63"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fkv-wG-mwQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ohh-Da-jAa" firstAttribute="top" secondItem="Fkv-wG-mwQ" secondAttribute="bottom" id="6Yo-qd-Ja3"/>
                             <constraint firstItem="ohh-Da-jAa" firstAttribute="leading" secondItem="pAL-9A-7Qb" secondAttribute="leading" id="CqD-No-D29"/>
-                            <constraint firstItem="ohh-Da-jAa" firstAttribute="top" secondItem="pAL-9A-7Qb" secondAttribute="bottom" constant="-29" id="IL4-Z4-lnc"/>
+                            <constraint firstItem="ohh-Da-jAa" firstAttribute="top" secondItem="pAL-9A-7Qb" secondAttribute="bottom" id="IL4-Z4-lnc"/>
                             <constraint firstItem="Fkv-wG-mwQ" firstAttribute="trailing" secondItem="pAL-9A-7Qb" secondAttribute="trailing" id="QEs-Qj-cNX"/>
                             <constraint firstItem="pAL-9A-7Qb" firstAttribute="leading" secondItem="Fkv-wG-mwQ" secondAttribute="leading" id="RAv-zr-ZKK"/>
                             <constraint firstItem="pAL-9A-7Qb" firstAttribute="top" secondItem="PuK-wL-zu7" secondAttribute="bottom" constant="8.5" id="SEg-gU-R7g"/>
                             <constraint firstItem="ohh-Da-jAa" firstAttribute="trailing" secondItem="pAL-9A-7Qb" secondAttribute="trailing" id="Zpc-eh-WMW"/>
-                            <constraint firstItem="pAL-9A-7Qb" firstAttribute="centerY" secondItem="FXo-2s-ois" secondAttribute="centerY" constant="57" id="h6d-KI-D7F"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="ohh-Da-jAa" secondAttribute="bottom" constant="-44" id="xGP-Ck-qMx"/>
+                            <constraint firstItem="pAL-9A-7Qb" firstAttribute="centerY" secondItem="FXo-2s-ois" secondAttribute="centerY" constant="42.5" id="h6d-KI-D7F"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ohh-Da-jAa" secondAttribute="bottom" constant="-44" id="xGP-Ck-qMx" userLabel="bottomMargin = Toolbar.bottom-55"/>
                             <constraint firstItem="ohh-Da-jAa" firstAttribute="centerX" secondItem="PuK-wL-zu7" secondAttribute="centerX" id="y2l-Yq-Bb8"/>
                         </constraints>
                     </view>
@@ -379,6 +379,81 @@
             </objects>
             <point key="canvasLocation" x="2119" y="540"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="wa6-dU-A5p">
+            <objects>
+                <viewController id="O2Z-CH-hh8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sbE-v6-klr" customClass="View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Goal..." minimumFontSize="17" id="Hje-v1-vth">
+                                <rect key="frame" x="71" y="228" width="273" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Description..." minimumFontSize="17" id="w59-gk-idK">
+                                <rect key="frame" x="71" y="327" width="273" height="203"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="B1r-Wf-WqK">
+                                <rect key="frame" x="71" y="177" width="121" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Goal:">
+                                        <attributes>
+                                            <font key="NSFont" size="30" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="xRK-jM-1FX">
+                                <rect key="frame" x="71" y="284" width="217" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Description:">
+                                        <attributes>
+                                            <font key="NSFont" size="30" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="2Iq-aw-Yxs">
+                                <rect key="frame" x="68" y="559" width="127" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Status:">
+                                        <attributes>
+                                            <font key="NSFont" size="30" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bll-3K-hdF">
+                                <rect key="frame" x="297" y="563" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="j8e-iK-5Rm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="T8o-CE-ldD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="86I-2S-oT6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2757.971014492754" y="-20.089285714285712"/>
+        </scene>
         <!--GoalsVC-->
         <scene sceneID="96d-9R-2n0">
             <objects>
@@ -419,10 +494,18 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G5c-U9-eid">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G5c-U9-eid" customClass="GoalsUITableView">
                                 <rect key="frame" x="0.0" y="164" width="414" height="649"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTv-oA-PX6" customClass="UIaddButton">
+                                <rect key="frame" x="339" y="95" width="65" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="AddGoal"/>
+                                <connections>
+                                    <segue destination="O2Z-CH-hh8" kind="show" id="iaS-4g-cIO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qMQ-iO-Wj5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -439,7 +522,7 @@
                             <constraint firstItem="qMQ-iO-Wj5" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xpY-Pn-tix" secondAttribute="trailing" id="l4Q-SM-rGD"/>
                             <constraint firstItem="G5c-U9-eid" firstAttribute="top" secondItem="xpY-Pn-tix" secondAttribute="bottom" id="pxV-KQ-V0Z"/>
                             <constraint firstItem="qMQ-iO-Wj5" firstAttribute="trailing" secondItem="G5c-U9-eid" secondAttribute="trailing" id="q4T-gu-Lyh"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="YsS-vN-gDF" secondAttribute="bottom" constant="-44" id="vOA-R6-PZr"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="YsS-vN-gDF" secondAttribute="bottom" constant="-44" id="vOA-R6-PZr" userLabel="bottomMargin = Toolbar.bottom + 44"/>
                             <constraint firstItem="YsS-vN-gDF" firstAttribute="leading" secondItem="G5c-U9-eid" secondAttribute="leading" id="vhA-Gt-rND"/>
                         </constraints>
                     </view>
@@ -452,7 +535,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jeV-05-VL9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2757" y="635"/>
+            <point key="canvasLocation" x="2756.521739130435" y="634.82142857142856"/>
         </scene>
         <!--NotificationVC-->
         <scene sceneID="H9U-6z-RnX">
@@ -513,13 +596,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tTF-vU-Ik3"/>
-        <segue reference="fd5-Up-Uyz"/>
-        <segue reference="VMk-ML-cVE"/>
+        <segue reference="I3L-Pe-xjZ"/>
+        <segue reference="rAr-Rj-yrm"/>
+        <segue reference="nrI-yW-jdH"/>
         <segue reference="S1Z-SD-20w"/>
-        <segue reference="Wjw-Kf-Upe"/>
+        <segue reference="8Pb-h3-Cv8"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="AddGoal" width="349" height="354"/>
         <image name="UpGrowth Icon" width="500" height="500"/>
         <image name="UpGrowth Label" width="500" height="500"/>
         <image name="add256px" width="256" height="256"/>
