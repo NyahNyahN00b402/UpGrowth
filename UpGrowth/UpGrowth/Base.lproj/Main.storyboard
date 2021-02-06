@@ -198,6 +198,14 @@
                     <view key="view" contentMode="scaleToFill" id="fWq-a2-CeP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p3f-tq-EQB">
+                                <rect key="frame" x="87" y="188" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="wjr-FN-2BA"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="EJw-LO-NQY"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="y9s-mT-Zc2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
